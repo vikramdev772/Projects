@@ -1,0 +1,232 @@
+
+/* html{
+    color-scheme: light dark;
+    
+} */
+
+
+
+
+.container{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent , transparent ,transparent , #0005);
+    
+
+}
+
+.cloud {
+    position: relative;
+    top: 50px;
+    width: 320px;
+    height: 100px;
+    background-color: #3778ea;
+    border-radius: 100px;
+    z-index: 100;
+    filter: drop-shadow(0 0 35px #3778ea);
+
+}
+
+.cloud::before{
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    width: 110px;
+    height: 110PX;
+    border-radius: 50%;
+    background-color: #3778ea;
+    box-shadow: 90px 0 0 30px #3778ea;
+}
+
+
+.text{
+    position: absolute;
+    top: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #3778ea;
+    text-shadow: 0 0 5px #3778ea, 0 0 15px#3778ea,0 0 25px#3778ea;
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) scale(1);
+    }
+    70%{
+        transform: translateY(290px) scale(1);
+    }
+    100%{
+        transform: translateY(290px) scale(0);
+    }
+}
+
+.sun{
+    position: absolute;
+    top: 80px;
+    right: 90px;
+    width: 200px;
+}
+
+.tab{
+    position: absolute;
+    bottom: 20px;
+    right: 90px;
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    box-shadow: 0 0 5px,0 0 15px;
+    border-radius: 18px;
+    border: 5px solid rgb(6, 10, 22);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+
+}
+.tab:hover{
+    box-shadow: 0 0 5px rgb(195, 64, 239),0 0 10px rgb(179, 55, 220),
+    0 0 25px rgb(239, 68, 239),0 0 50px rgb(212, 63, 225);
+ 
+}
+p{
+    color: rgb(10, 248, 26);
+    /* font-weight: 900; */
+    font-size: 16px;
+   
+    height: 100%;
+}
+
+
+
+.c{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+
+.shooting{
+    position: absolute;
+    top: 120px;
+    right:100px;
+    width: 100px;
+    rotate: 30deg;
+    
+    
+
+}
+
+
+ .nightstar{
+    position: absolute;
+    top: 200px;
+    right:200px;
+    width: 100px;
+    
+
+}
+ .move{
+    position: absolute;
+    top: 200px;
+    right:200px;
+    width: 100px;
+    animation: s 20s infinite ease-in-out;
+}
+
+.motion{
+    position: absolute;
+    top: 600px;
+    left:700px;
+    width: 100px;
+    animation: example 12s infinite;
+    /* animation: example 12s s slidein; */
+    rotate: 20deg;
+}
+
+@keyframes example {
+    0%   {top: 590px;
+        right:230px;
+      width: 100px;
+    }
+
+    25%  {top: 580px;
+        right:300px;
+        width: 95px;
+        rotate:50deg;}
+    45%  {top: 300px;
+        right:380px;
+        width: 75px;
+        rotate: 70deg;}
+    50% {top: 250px;
+        left:750px;
+        width: 60px;
+        rotate: 80deg;}
+    65% {top: 200px;
+        left:850px;
+        width: 50px;
+        rotate: 90deg; 
+            }
+    80% {top: 150px;
+          left: 1000px;
+          width: 40px;
+          rotate: 100deg;
+        }
+    90%{
+        top: 120px;
+        left: 1100px;
+        width: 30px;
+        rotate: 150deg;
+        
+    }
+    100%{
+      top: 100px;
+      left: 1250px;
+      width: 20px;
+
+    }
+
+
+         
+  }
+  
+  @keyframes s {
+    0%   {top: 220px;
+        right:300px;
+    width: 110px;}
+    25%  {top: 240px;
+        right:320px;
+        width: 120px;}
+    50%  {top: 260px;
+        right:350px;
+        width: 130px;}
+    75% {top: 300px;
+        right:600px;
+        width: 140px;
+        rotate: 20deg;}
+    80%{
+        top: 350px;
+        right:800px;
+        width: 180px;
+        rotate: -20deg;
+
+    }   
+    100%{
+        top:400px;
+        right:900px;
+        width: 200px;
+        rotate: 40deg;
+
+    }   
+  }
+
+

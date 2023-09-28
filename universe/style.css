@@ -1,0 +1,252 @@
+/* html{
+    color-scheme: dark light;
+    
+
+} */
+
+body{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 150px;
+    margin-right: 50%;
+   
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+
+}
+/* .sys{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 50px;
+} */
+
+
+.ring {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ball-holder {
+    position: absolute;
+    width: 12px;
+    height: 590px;
+    left: 302px;
+    top: 0px;
+    animation: loading 10.3s linear infinite;
+  }
+  
+  .ball {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    /* border-radius: 100%;
+    background: #4282b3; */
+  }
+  
+  @keyframes loading {
+    0%{
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.earth-orbit{
+    /* position: absolute;
+    width: 12px;
+    height: 590px;
+    left: 302px;
+    top: 0px; */
+    position: absolute;
+    top: -14px;
+    border-radius: 360px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 10px rgb(51, 176, 89),0 0 25px rgba(43, 247, 7, 0.921)
+    ,0 0 50px rgb(58, 220, 72),0 0 100px rgba(80, 238, 41, 0.921);
+    animation: loading 10.3s linear infinite;
+  
+}
+
+
+
+
+
+
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 900px;
+    border:  2px solid red;
+}
+
+.sun{
+    
+    display: block;
+    animation: spin 60s infinite;
+    width: 300px;
+}
+
+.mercury{
+    width: 40px;
+    border-radius: 360px;
+    box-shadow: 0 0 5px rgb(238, 107, 107),0 0 10px rgba(246, 78, 78, 0.921);
+    animation: spin 5s infinite;
+    position: absolute;
+    /* animation: r 5s infinite; */
+    animation: loading 1.3s linear infinite;
+    top: 400px;
+    left: 550px;
+   
+}
+.mercury:hover{
+    box-shadow: 0 0 5px rgb(244, 84, 84),0 0 10px rgba(238, 35, 35, 0.921),
+    0 0 50px rgb(238, 107, 107),0 0 100px rgba(246, 78, 78, 0.921);
+}
+@keyframes spin { 
+    100% { 
+         
+        transform:rotate(360deg); 
+    } 
+    /* 0%{
+        top: 50px;
+    }
+     */
+}
+
+.venus{
+    width: 50px;
+    border-radius: 360px;
+    box-shadow: 0 0 5px rgb(238, 107, 107),0 0 10px rgba(246, 78, 78, 0.921);
+    animation: spin 1s infinite ease-in-out;
+    position: absolute;
+    top: 360px;
+    left: 980px;
+   
+}
+.venus:hover{
+    box-shadow: 0 0 5px rgb(216, 162, 69),0 0 10px rgba(237, 193, 62, 0.921),
+    0 0 50px rgb(225, 169, 90),0 0 100px rgba(180, 138, 71, 0.921);
+
+}
+
+.earth{
+    width: 80px;
+    border-radius: 360px;
+    box-shadow: 0 0 5px rgb(85, 232, 127),0 0 10px rgba(67, 223, 96, 0.921);
+    animation: e 6s infinite ease-in-out;
+    
+    position: absolute;
+    top: 420px;
+    left: 1090px;
+
+   }
+
+.earth-orbit:hover{
+    box-shadow: 0 0 5px rgb(46, 222, 125),0 0 10px rgba(70, 125, 213, 0.921),
+    0 0 50px rgb(85, 34, 225),0 0 100px rgba(76, 145, 234, 0.921);
+
+
+}
+@keyframes e{
+   /* 0%{
+        transform: rotate(360deg);
+   }
+   25%{
+    left: 300px;
+   } */
+   
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  
+}
+
+
+.mars{
+    width: 90px;
+    border-radius: 360px;
+    box-shadow: 0 0 0px rgb(232, 85, 154),0 0 10px rgba(223, 67, 111, 0.921);
+   position: absolute;
+   top: 580px;
+   left: 1160px;
+   animation: spin 12s infinite;
+   
+}
+.mars:hover{
+    box-shadow: 0 0 5px rgb(232, 85, 154),0 0 10px rgba(223, 67, 111, 0.921),
+    0 0 50px rgb(232, 85, 154),0 0 100px rgba(223, 67, 111, 0.921) ;
+
+}
+.jupiter{
+
+    width: 130px;
+    animation: spin 30s infinite;
+    
+    position:absolute;
+    top: 130px;
+    left: 1200px;
+
+
+}
+.satrun{
+    width: 110px;
+    
+    position:absolute;
+    top: 100px;
+    left: 600px;
+    animation: spin 20s infinite;
+
+    
+
+}
+.uranus{
+    width: 100px;
+    position:absolute;
+    top: 300px;
+    left: 150px;
+    animation: spin 15s infinite;
+
+    
+    
+
+}
+.neptune{
+    width: 90px;
+    border-radius: 360px;
+    box-shadow: 0 0 5px rgb(85, 139, 232),0 0 10px rgba(57, 96, 227, 0.921);
+    position:absolute;
+    top: 600px;
+    left: 300px;
+    animation: spin 15s infinite;
+
+
+}
+.neptune:hover{
+    box-shadow: 0 0 5px rgb(85, 139, 232),0 0 10px rgba(57, 96, 227, 0.921),
+  0 0 50px rgb(85, 139, 232),0 0 100px rgba(57, 96, 227, 0.921);
+ 
+ 
+}

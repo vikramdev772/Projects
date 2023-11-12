@@ -1,0 +1,27 @@
+html{
+    color-scheme: light dark;
+}
+
+body{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1{
+    color: rgb(57, 243, 11);
+   
+}
+
+button{
+    color: aqua;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 40px;
+    border: none;
+    background-image: radial-gradient(rgb(60, 129, 234),rgb(58, 125, 241));
+    box-shadow: 0 0 5px,0 0 10px;
+    
+
+}

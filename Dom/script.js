@@ -1,12 +1,8 @@
+
 let s = document.getElementById("sun");
-
-
-
 const star = document.getElementById("star");
 const m = document.getElementById("m");
-
 let isSun = true;
-
 // Function to toggle between sun and moon images
 function sun() {
   if (isSun) {
@@ -28,14 +24,6 @@ function sun() {
 const pElement = document.querySelector("p");
 pElement.innerHTML =
   "0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 01 0 1 0 1 0  1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1";
-
-
-
-
-
-
-
-
 function randomText() {
   var text = "01010";
   var letter = text[Math.floor(Math.random() * text.length)];

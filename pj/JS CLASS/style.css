@@ -1,0 +1,70 @@
+/* html{
+    color-scheme: light dark;
+} */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    box-shadow: 0 0 10px ,0 0 25px,0 0 50px;
+    border: 2px solid black;
+    border-radius: 18px;
+    text-align: center;
+   
+}
+.container:hover{
+    box-shadow: 0 0 10px rgb(236, 82, 231),0 0 25px rgb(181, 65, 223),0 0 50px rgb(241, 68, 230),0 0 75px rgb(177, 47, 232);
+}
+
+.btn1{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    box-shadow: 0 0 10px ,0 0 15px ,0 0 25px,0 0 50px;
+    padding: 8px;
+    border-radius: 10px;
+    background-image: radial-gradient(rgb(230, 70, 222),rgba(220, 85, 237, 0.701));
+    font-weight: 900;
+    font-size: 1rem;
+
+}
+
+.btn2{
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    box-shadow: 0 0 10px ,0 0 15px ,0 0 25px,0 0 50px;
+    padding: 8px;
+    border-radius: 10px;
+    background-image: radial-gradient(rgb(230, 70, 222),rgba(220, 85, 237, 0.701));
+    font-weight: 900;
+    font-size: 1rem;
+}
+.btn1:hover{
+    box-shadow: 0 0 10px rgb(241, 38, 227),0 0 25px rgb(218, 68, 218),
+    0 0 50px rgb(173, 95, 228),0 0 100px rgb(233, 87, 155);
+
+}
+.btn2:hover{
+    box-shadow: 0 0 10px rgb(241, 38, 227),0 0 25px rgb(218, 68, 218),
+    0 0 50px rgb(173, 95, 228),0 0 100px rgb(233, 87, 155);
+
+
+}
+
+h1{
+    color: rgba(238, 110, 30, 0.982);
+}
+p{
+    color: rgb(50, 239, 62);
+    font-size: 3rem;
+    font-weight: 900;
+}
